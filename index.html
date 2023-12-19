@@ -1,0 +1,50 @@
+<!--
+// v0 by Vercel.
+// https://v0.dev/t/qSla87pylnc
+-->
+<main
+  class="flex flex-col items-center justify-center min-h-screen py-6 bg-gray-50"
+>
+  <div
+    class="p-4 space-y-6 w-full max-w-md mx-auto bg-white rounded-xl shadow-md"
+  >
+    <div class="space-y-2">
+      <h1 class="text-2xl font-bold text-center">Number &amp; Word Checker</h1>
+      <p class="text-gray-500 dark:text-gray-400 text-center">
+        Enter a number or a word and check if the numbers add up to 7 or the
+        letters add up to 7.
+      </p>
+    </div>
+    <div class="flex flex-col space-y-4">
+      <div class="space-y-2">
+        <label
+          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          for="input-field"
+          >Your Input</label
+        ><input
+          class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+          id="input-field"
+          placeholder="Enter a number or a word"
+          required=""
+        />
+      </div>
+      <button
+        class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+        type="submit"
+      >
+        Check
+      </button>
+    </div>
+  </div>
+  <div
+    class="rounded-lg border bg-card text-card-foreground shadow-sm mt-8"
+    data-v0-t="card"
+  >
+    <div class="p-4">
+      <h2 class="text-xl font-bold text-center">Results</h2>
+      <p class="text-sm text-gray-500 dark:text-gray-400 text-center">
+        The results will be displayed here.
+      </p>
+    </div>
+  </div>
+</main>

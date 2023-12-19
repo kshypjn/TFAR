@@ -1,0 +1,72 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('./msd.jpg');
+  background-size: cover;
+  background-position: center;
+  padding-left: 500px; /* Add this line */
+}
+.title {
+  font-size: 2em; /* Make the font larger */
+  color: white; /* Make the text color white for visibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for better visibility */
+  font-family: 'Arial', sans-serif; /* Change the font */
+  background-color: rgb(0, 55, 104);
+  padding: 12px ;
+}
+.input {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #181818;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #d4ff00; /* Bright green text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for 3D effect */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  padding: 10px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.2s ease; /* Smooth transitions */
+}
+
+.result:hover {
+  transform: scale(1.1); /* Slightly enlarge when hovered over */
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #2282ff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.button:active {
+  box-shadow: none;
+  transform: scale(0.98);
+}
